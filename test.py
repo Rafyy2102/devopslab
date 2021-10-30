@@ -26,4 +26,3 @@ class Test(unittest.TestCase):
 
           # verifica o retorno do conteudo da pagina /soma
         self.assertEqual(self.resultSoma.data.decode('utf-8'), "Sua soma de 10+10=20")
-
