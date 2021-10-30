@@ -9,6 +9,12 @@ language: python
 python:
   - "3.8"
 
+# Integração com SonarCloud
+addons:
+  sonarcloud:
+    organization: COLOQUE_A_Organization Key
+    token: ${SONAR_TOKEN}  
+
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
@@ -16,6 +22,7 @@ install:
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
   - python -m unittest -v test
+  - sonar-scanner || travis_terminate 1;
 
 # Definir o Deploy no Heroku
 deploy:
