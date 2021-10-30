@@ -12,7 +12,7 @@ python:
 # Integração com SonarCloud
 addons:
   sonarcloud:
-    organization: COLOQUE_A_Organization Key
+    organization: rafyy2102
     token: ${SONAR_TOKEN}  
 
 # Instalação de Módulos que são necessários para a Aplicação.
