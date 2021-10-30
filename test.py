@@ -22,7 +22,7 @@ class Test(unittest.TestCase):
 
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
-        self.assertEqual(self.result.data.decode('utf-8'), "Oi Rafa belezinha")
+        self.assertEqual(self.result.data.decode('utf-8'), "Oi Rafyy belezinha")
 
           # verifica o retorno do conteudo da pagina /soma
-        self.assertEqual(self.resultSoma.data.decode('utf-8'), "Sua soma de 10+10=20")
+        self.assertEqual(self.resultSoma.data.decode('utf-8'), "Sua soma de 10 + 10 = 20")

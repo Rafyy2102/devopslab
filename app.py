@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def pagina_inicial():
-    return "Oi Rafa belezinha"
+    return "Oi Rafyy belezinha"
 
 #Criando um novo endPoint
 @app.route("/soma")
 def soma_valores():
-    x=10+10
-    return "Sua soma de 10+10="+str(x)    
+    x = 10 + 10 
+    return "Sua soma de 10 + 10 = "+str(x)    
 
 if __name__ == '__main__':
     app.run()
