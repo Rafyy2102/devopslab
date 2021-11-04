@@ -1,5 +1,5 @@
  ### MBA Impacta LAB DevOps & Cloud computing - Turma 03
 
-[![Build Status](https://app.travis-ci.com/Rafyy2102/devopslab.svg?branch=main)](https://app.travis-ci.com/Rafyy2102/devopslab)
+[![Build Status](https://app.travis-ci.com/Rafyy2102/devopslab.svg?branch=main)](https://app.travis-ci.com/Rafyy2102/devopslab) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Rafyy2102_devopslab&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Rafyy2102_devopslab) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Rafyy2102_devopslab&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Rafyy2102_devopslab) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Rafyy2102_devopslab&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Rafyy2102_devopslab)
 
 Aplicação Simples em Python/Flask com teste usando Unittest integrado ao Travis-CI fazendo deploy na Cloud.
