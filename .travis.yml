@@ -49,4 +49,4 @@ jobs:
     - stage: Stage Test
       name: GET URL Stage
       script:
-        - curl https://devopslab-rafyy.herokuapp.com/ | grep Oi Rafyy belezinha | travis_terminate 1;     
+        - curl https://devopslab-rafyy.herokuapp.com/ | grep Oi Rafyy belezinha || travis_terminate 1;     
