@@ -45,6 +45,7 @@ jobs:
         app: devopslab-gabydias
         on:
           branch: main
+          
     - stage: Stage Test
       name: GET URL Stage
       script:
