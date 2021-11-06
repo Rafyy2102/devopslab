@@ -42,10 +42,10 @@ jobs:
         strategy: api
         api_key: $HEROKU_API_KEY
         edge: true
-        app: devopslab-gabydias
+        app: devopslab-rafyy
         on:
           branch: main
-          
+
     - stage: Stage Test
       name: GET URL Stage
       script:
