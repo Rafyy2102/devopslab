@@ -49,4 +49,21 @@ jobs:
     - stage: Stage Test
       name: GET URL Stage
       script:
-        - curl https://devopslab-rafyy.herokuapp.com/ | grep "Oi Rafyy belezinha" || travis_terminate 1;     
+        - curl https://devopslab-rafyy.herokuapp.com/ | grep "Oi Rafyy belezinha" || travis_terminate 1; 
+        
+    - stage: Production Deploy
+      name: Google Api Engine
+      script: skip
+
+      # Definir o Deploy no Google Cloud
+      deploy:
+        provider: gae
+        keyfile: ../gcpterraformkey.json
+        project: lab-devops-cloud-t3-rafyy
+        on:
+          branch: main
+
+    - stage: Production Test
+      name: GET URL Production
+      script:
+        - curl https://lab-devops-cloud-t3-rafyy.uc.r.appspot.com/ | grep "Oi Rafyy belezinha" || travis_terminate 1; 
